@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <script src="https://wwww.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+        <script src="https://wwww.gstatic.com/firebasejs/5.9.2/firebase-auth.hs"></script>
+        <script>
+            const projectId = 'login-f2e55';
+            const config = {
+                apikey: 'AIzaSyAqwccjqZfaQ2kiBRHZXso3HQKcWrLYGY8',
+                authDomain: `${login-f2e55}.firebaseapp.com`,
+                databaseURL: `https://${login-f2e55}.firebaseio.com`,
+                projectId: login-f2e55,
+                storageBucket: `${login-f2e55}.appspot.com`,
+                messagingSenderId: '987510455318'
+            }
+            firebase.initializeApp(config);
+        </script>
+    
+    </head>
+        <body>
+
+
+            <div id="login" class="form-container">
+                <h1 class="header">Log In</h1>
+                <hr>
+
+                <div id="email" class="form-group" data-step="1">
+                    <label for="email-input">Enter your email</label>
+                    <input type="text" id="email-input" class="form-control">
+                </div>
+
+                <div id="password" class="form-group final" data-step="2">
+                    <label for="password-input">Enter your password</label>
+                    <input id="password-input" class="form-control" type="password">
+                </div>
+
+                <p id="error-message"></p>
+
+                <button id="next-button" class="btn btn-primary">Next</button>
+
+                <div id="back-button">&#8592;</div>
+
+                <div class="info-section">
+                    <p>Don't have an account yet?</p>
+                    <a href="signup.html">Sign up for free!</a>
+                </div>
+
+            </div>
+            <script src="script.js"></script>
+        </body>
+    
+</html> 
